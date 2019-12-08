@@ -1,17 +1,12 @@
-<div class="container">
-  <div class="jumbotron">
-    <h1>Welcome</h1>
-    <h2>#Chibeocuanguyen</h2>
+
+<div>
+  <h3>Hello, it is working</h3>
+  <div *ngIf="canDisplay()">
+    <img src="assets/img/txt1.jpg">
   </div>
-  <div class="panel panel-primary">
-    <div class="panel-heading">Love ^^</div>
-    <div class="panel-body">
-      <div class="row">
-        <div class="col-sm-12 col-lg-12 col-xl-12">
-          Love you so much
-        </div>
-      </div>
-    </div>
+  <div *ngIf="!canDisplay()">
+    It is not the time to display pass
+    <br>
+    Have a nice day anh Vu :)
   </div>
-  <img src="assets/img/pic1.jpg">
 </div>
